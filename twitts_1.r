@@ -158,14 +158,9 @@ barplot(sort(w),las=2, col=rainbow(60), main="Bag of Words")
 library(tidytext)
 library(dplyr)
 body[[1]] %>%  count(word) %>%arrange(desc(n))
-
-
 body. %>%
   select(created_at,text) %>%
   unnest_tokens("word", text)
-
-
-
   unnest_tokens(bigram,tdm,token="ngrams",n=2)
 
 
